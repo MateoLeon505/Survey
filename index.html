@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <div>
+        <form id="survey-form">
+          <div>
+            <label id="name-label">Name</label>
+            <input
+              required
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div>
+            <label id="email-label">Email</label>
+            <input
+              required
+              id="email"
+              type="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div>
+            <label id="number-label">Age</label>
+            <input
+              id="number"
+              type="number"
+              min="1"
+              max="120"
+              placeholder="Age"
+            />
+          </div>
+          <div>
+            <p>Wich option best describes your current role?</p>
+            <select id="dropdown">
+              <option disabled selected value>Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full time job</option>
+              <option value="3">Full time learner</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
+            </select>
+          </div>
+          <div>
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <div>
+              <label>Definitely</label>
+              <input type="radio" value="definitely" name="recommend" />
+            </div>
+            <div>
+              <label>Maybe</label>
+              <input type="radio" value="maybe" name="recommend"  />
+            </div>
+            <div>
+              <label>Not sure</label>
+              <input type="radio" value="notSure" name="recommend"  />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
